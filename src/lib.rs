@@ -13,11 +13,23 @@ pub struct GNT;
 
 impl GNT {
 
-    fn get_plain_text_for_ref(bible_ref: &BibleRef) -> String {
+    pub fn get_plain_text_for_ref(bible_ref: &BibleRef) -> String {
         SblgntDatabase::get_plain_text_for_ref(&bible_ref)
     }
 
-    fn get_plain_text_for_ref_range(range: &BibleRefRange) -> String {
+    pub fn get_plain_text_for_ref_range(range: &BibleRefRange) -> String {
         SblgntDatabase::get_plain_text_for_ref_range(&range)
+    }
+
+    pub fn get_gloss(lex: &String) -> String {
+        SblgntDatabase::get_gloss_and_occ_for_lex(lex).0
+    }
+
+    pub fn get_occ(lex: &String) -> i64 {
+        SblgntDatabase::get_gloss_and_occ_for_lex(lex).1
+    }
+
+    pub fn get_gloss_and_occ(lex: &String) -> (String, i64) {
+        SblgntDatabase::get_gloss_and_occ_for_lex(lex)
     }
 }

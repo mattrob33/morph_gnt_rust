@@ -1,7 +1,7 @@
 [package]
 name = "morph_gnt"
 authors = ["Matt Robertson <mattrobertson333@gmail.com"]
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Provides queryable text of the Greek New Testament (SBLGNT), including glosses and parsing data."
 readme = "README.md"
