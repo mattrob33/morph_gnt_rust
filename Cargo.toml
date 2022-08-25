@@ -1,0 +1,16 @@
+[package]
+name = "morph_gnt"
+authors = ["Matt Robertson <mattrobertson333@gmail.com"]
+version = "0.1.0"
+edition = "2021"
+description = "Provides queryable text of the Greek New Testament (SBLGNT), including glosses and parsing data."
+readme = "README.md"
+repository = "https://github.com/mattrob33/morph_gnt_rust/"
+license = "MIT"
+keywords = ["bible", "greek", "new-testament",  "greek-new-testament", "morphgnt"]
+categories = ["text-processing"]
+
+
+[dependencies]
+sqlite = "0.27.0"
+bible_ref = "0.1.1"
